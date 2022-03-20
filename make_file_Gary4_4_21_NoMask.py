@@ -16,7 +16,7 @@ profile_description = "mutation profile from GO" #input ("please enter the mutat
 
 #This function is to get the disease of the sample
 def get_disease(str):
-    r = requests.get("https://patheuhmollabserv2.eushc.org:12443/clinical-app/api/orders/?order_id=" + str, auth=('n921803', 'Emoryfellow321'))
+    r = requests.get("https://patheuhmollabserv2.eushc.org:12443/clinical-app/api/orders/?order_id=" + str, auth=('xxxxxx', 'xxxxxxx'))
     data = json.loads(r.text)
     #print(data[0]['diseases'][0]['display'])
     if len(data) != 0:
