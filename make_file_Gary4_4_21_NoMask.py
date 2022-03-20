@@ -26,7 +26,7 @@ def get_disease(str):
         
  
  
-#os.system('./case_attributes_by_acc_no.sh MD21-337') Newly added
+#os.system('./case_attributes_by_acc_no.sh MD21-337') get patient ID and collection date
 def get_collection_date_patientID (str):
     date_ID = subprocess.Popen("./case_attributes_by_acc_no.sh " + str, shell=True, stdout=subprocess.PIPE)
     date_ID_text = date_ID.stdout.read().decode('utf-8')
